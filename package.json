@@ -1,5 +1,12 @@
 {
+  "name": "readerx",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build"
+  },
   "devDependencies": {
-    "parcel": "^2.16.4"
+    "vite": "^8.0.10"
   }
 }
