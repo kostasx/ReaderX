@@ -8,8 +8,13 @@ export default defineConfig({
       name: 'ReaderX', // The global variable name for UMD builds
       fileName: 'app',
       // Explicitly define formats if you want to avoid defaults
-      formats: ['es', 'umd']
+      formats: ['es']
     },
-    // No need for rollupOptions.external if you have no dependencies
+    rollupOptions: {
+      output: {
+        codeSplitting: false,
+        format: 'iife',
+      },
+    },
   },
 });
